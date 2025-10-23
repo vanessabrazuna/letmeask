@@ -1,0 +1,12 @@
+services:
+  letmeask:
+    image: postgres:15-alpine
+    container_name: letmeask_db
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: letmeask
+    ports:
+      - "5432:5432"
+
+
